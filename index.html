@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ── PRIMARY SEO ── -->
+  <title>Painting & Glass Inc. | Professional Painting & Glass Services in the Bay Area</title>
+  <meta name="description" content="Painting & Glass Inc. offers expert interior painting, exterior painting, commercial painting, glass installation, window replacement, glass repair, and custom mirrors across the Bay Area. Licensed & insured. Get a free quote today." />
+  <meta name="keywords" content="painting contractor Bay Area, glass installation Bay Area, interior painting San Jose, exterior painting Bay Area, commercial painting California, window replacement Bay Area, glass repair, custom mirrors, Painting and Glass Inc" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Painting & Glass Inc." />
+  <link rel="canonical" href="https://www.paintingandglassinc.com/" />
+
+  <!-- ── OPEN GRAPH (Facebook, LinkedIn previews) ── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Painting & Glass Inc." />
+  <meta property="og:title" content="Painting & Glass Inc. | Professional Painting & Glass Services — Bay Area" />
+  <meta property="og:description" content="Bay Area's trusted painting and glass professionals. Interior, exterior & commercial painting plus glass installation, window replacement, repairs, and custom mirrors. Free estimates available." />
+  <meta property="og:url" content="https://www.paintingandglassinc.com/" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ── TWITTER CARD ── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Painting & Glass Inc. | Bay Area Painting & Glass Experts" />
+  <meta name="twitter:description" content="Professional painting and glass services across the Bay Area. Licensed & insured. Interior, exterior, commercial painting + glass installation & custom mirrors." />
+
+  <!-- ── GEO / LOCAL SEO ── -->
+  <meta name="geo.region" content="US-CA" />
+  <meta name="geo.placename" content="Bay Area, California" />
+
+  <!-- ── SCHEMA.ORG LOCAL BUSINESS ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Painting & Glass Inc.",
+    "description": "Professional painting and glass services across the Bay Area. Specializing in interior painting, exterior painting, commercial painting, glass installation, window replacement, glass repair, and custom mirrors.",
+    "url": "https://www.paintingandglassinc.com",
+    "telephone": "(000) 000-0000",
+    "email": "hello@paintingandglassinc.com",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.4419,
+        "longitude": -122.1430
+      },
+      "geoRadius": "80000"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "serviceArea": {
+      "@type": "Place",
+      "name": "Bay Area, California"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Painting & Glass Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Painting" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exterior Painting" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Painting" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Glass Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Window Replacement" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Glass Repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Glass and Mirrors" } }
+      ]
+    },
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "3"
+    }
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --charcoal: #1C1C1E;
+      --white: #FFFFFF;
+      --blue: #2E5D8E;
+      --blue-light: #3A72AD;
+      --amber: #F0A500;
+      --silver: #E8ECF0;
+      --muted: #6B7280;
+      --dark-bg: #141416;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--charcoal);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw;
+      height: 70px;
+      background: rgba(20,20,22,0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+    .nav-logo span { color: var(--amber); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--amber); }
+    .nav-cta {
+      background: var(--amber);
+      color: var(--charcoal) !important;
+      font-weight: 600 !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.15s !important;
+    }
+    .nav-cta:hover { background: #d4920a !important; transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      background: var(--dark-bg);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-left {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 120px 5vw 80px 8vw;
+      z-index: 2;
+    }
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 1.5rem;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 5vw, 4.8rem);
+      font-weight: 900;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+    .hero-title .accent { color: var(--blue-light); }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.7;
+      max-width: 420px;
+      margin-bottom: 2.5rem;
+    }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--amber);
+      color: var(--charcoal);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.9rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: #d4920a; transform: translateY(-2px); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 0.9rem 2rem;
+      border-radius: 5px;
+      border: 1px solid rgba(255,255,255,0.25);
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+      display: inline-block;
+    }
+    .btn-secondary:hover { border-color: var(--white); color: var(--white); }
+
+    .hero-stats {
+      display: flex; gap: 2.5rem;
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    /* Paint-stroke diagonal panel on right */
+    .hero-right {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-right::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, var(--blue) 0%, #1a3f63 100%);
+      clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .hero-right-content {
+      position: relative; z-index: 1;
+      height: 100%;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      padding: 120px 4vw 80px 6vw;
+      gap: 1.5rem;
+    }
+    .service-badge {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      width: 100%;
+      max-width: 320px;
+      display: flex; align-items: center; gap: 1rem;
+      backdrop-filter: blur(4px);
+      transition: background 0.2s;
+    }
+    .service-badge:hover { background: rgba(255,255,255,0.13); }
+    .badge-icon {
+      font-size: 1.6rem;
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--amber);
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+    .badge-title { font-weight: 600; color: var(--white); font-size: 0.9rem; }
+    .badge-sub { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-top: 2px; }
+
+    /* ── SECTION SHARED ── */
+    section { padding: 100px 8vw; }
+    .section-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      font-weight: 700;
+      color: var(--charcoal);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .section-sub {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 540px;
+    }
+    .section-header { margin-bottom: 3.5rem; }
+
+    /* ── SERVICES ── */
+    #services { background: var(--silver); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 2rem;
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: box-shadow 0.25s, transform 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+      background: var(--blue);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+    .service-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.1); transform: translateY(-4px); }
+    .service-card:hover::after { transform: scaleX(1); }
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      width: 52px; height: 52px;
+      display: flex; align-items: center; justify-content: center;
+      background: #EEF4FB;
+      border-radius: 10px;
+    }
+    .card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 0.5rem;
+    }
+    .card-desc { font-size: 0.875rem; color: var(--muted); line-height: 1.65; }
+
+    /* ── GALLERY ── */
+    #gallery { background: var(--charcoal); }
+    #gallery .section-title { color: var(--white); }
+    #gallery .section-eyebrow { color: var(--amber); }
+    #gallery .section-sub { color: rgba(255,255,255,0.55); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .gallery-item {
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      background: #2a2a2e;
+      aspect-ratio: 4/3;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .gallery-overlay {
+      position: absolute; inset: 0;
+      background: rgba(0,0,0,0);
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.3s;
+    }
+    .gallery-item:hover .gallery-overlay { background: rgba(0,0,0,0.4); }
+    .gallery-overlay span {
+      color: white; font-size: 0.85rem; font-weight: 600;
+      opacity: 0; letter-spacing: 0.1em; text-transform: uppercase;
+      transition: opacity 0.3s;
+    }
+    .gallery-item:hover .gallery-overlay span { opacity: 1; }
+    .gallery-note {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* ── TESTIMONIALS ── */
+    #testimonials { background: var(--white); }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .testimonial-card {
+      background: var(--silver);
+      border-radius: 10px;
+      padding: 2rem;
+      position: relative;
+    }
+    .stars { color: var(--amber); font-size: 1rem; margin-bottom: 1rem; letter-spacing: 2px; }
+    .testimonial-text {
+      font-size: 0.9rem;
+      color: var(--charcoal);
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+    .testimonial-author { font-weight: 600; font-size: 0.875rem; color: var(--charcoal); }
+    .testimonial-location { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
+    .quote-mark {
+      position: absolute; top: 1.2rem; right: 1.5rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      color: rgba(46,93,142,0.08);
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    /* ── QUOTE SECTION ── */
+    #quote {
+      background: linear-gradient(135deg, var(--blue) 0%, #1a3f63 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    #quote::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+    #quote::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -40px;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.03);
+    }
+    .quote-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative; z-index: 1;
+    }
+    .quote-left .section-title { color: var(--white); }
+    .quote-left .section-eyebrow { color: var(--amber); }
+    .quote-left .section-sub { color: rgba(255,255,255,0.6); }
+    .quote-perks { margin-top: 2rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    .perk {
+      display: flex; align-items: center; gap: 0.75rem;
+      font-size: 0.875rem; color: rgba(255,255,255,0.75);
+    }
+    .perk-check {
+      width: 20px; height: 20px;
+      background: var(--amber);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; color: var(--charcoal); font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* FORM */
+    .quote-form {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    }
+    .form-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      margin-bottom: 0.25rem;
+    }
+    .form-sub { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.75rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+    .form-group label { font-size: 0.8rem; font-weight: 600; color: var(--charcoal); letter-spacing: 0.03em; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      border: 1.5px solid #D1D5DB;
+      border-radius: 6px;
+      padding: 0.65rem 0.9rem;
+      font-size: 0.875rem;
+      font-family: 'Inter', sans-serif;
+      color: var(--charcoal);
+      transition: border-color 0.2s;
+      outline: none;
+      background: var(--white);
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--blue); }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+    .btn-submit {
+      width: 100%;
+      background: var(--amber);
+      color: var(--charcoal);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      letter-spacing: 0.04em;
+      transition: background 0.2s, transform 0.15s;
+      margin-top: 0.5rem;
+    }
+    .btn-submit:hover { background: #d4920a; transform: translateY(-1px); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark-bg);
+      padding: 60px 8vw 30px;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    .footer-brand span { color: var(--amber); }
+    .footer-desc { font-size: 0.875rem; color: rgba(255,255,255,0.45); line-height: 1.7; max-width: 280px; }
+    .footer-col h4 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 1.25rem;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+    .footer-col ul li a {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-col ul li a:hover { color: var(--amber); }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 2rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.3);
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 0.5rem; }
+    .contact-item { font-size: 0.875rem; color: rgba(255,255,255,0.55); }
+    .contact-item strong { color: var(--white); }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      #hero { grid-template-columns: 1fr; }
+      .hero-right { display: none; }
+      .hero-left { padding: 110px 6vw 60px; }
+      .hero-stats { gap: 1.5rem; }
+      section { padding: 70px 6vw; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .quote-inner { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+      nav { padding: 0 5vw; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Painting <span>&</span> Glass Inc.</div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#quote" class="nav-cta">Free Quote</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero" aria-label="Painting and Glass Inc Bay Area Services">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Bay Area Wide &middot; Licensed &amp; Insured</p>
+    <h1 class="hero-title">
+      Painting &amp; Glass Inc.<br>
+      <span class="accent">Bay Area Experts.</span>
+    </h1>
+    <p class="hero-sub">
+      Professional interior painting, exterior painting, commercial painting, glass installation, window replacement, and custom mirrors — serving homeowners and businesses across the entire Bay Area.
+    </p>
+    <div class="hero-actions">
+      <a href="#quote" class="btn-primary" aria-label="Get a free painting or glass estimate">Get a Free Quote</a>
+      <a href="#services" class="btn-secondary" aria-label="View all painting and glass services">Our Services</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div>
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div>
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Satisfaction Guaranteed</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-right-content">
+      <div class="service-badge">
+        <div class="badge-icon">🎨</div>
+        <div>
+          <div class="badge-title">Interior & Exterior Painting</div>
+          <div class="badge-sub">Residential & Commercial</div>
+        </div>
+      </div>
+      <div class="service-badge">
+        <div class="badge-icon">🪟</div>
+        <div>
+          <div class="badge-title">Glass Installation</div>
+          <div class="badge-sub">Windows, Doors & Custom Glass</div>
+        </div>
+      </div>
+      <div class="service-badge">
+        <div class="badge-icon">🔧</div>
+        <div>
+          <div class="badge-title">Repairs & Replacements</div>
+          <div class="badge-sub">Glass Repair & Window Replacement</div>
+        </div>
+      </div>
+      <div class="service-badge">
+        <div class="badge-icon">✨</div>
+        <div>
+          <div class="badge-title">Custom Glass & Mirrors</div>
+          <div class="badge-sub">Tailored to Your Vision</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header">
+    <p class="section-eyebrow">What We Do</p>
+    <h2 class="section-title">Services That Cover<br>Every Project</h2>
+    <p class="section-sub">Whether you're refreshing a room or upgrading your windows, our team handles it all with precision and professionalism.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="card-icon">🏠</div>
+      <div class="card-title">Interior Painting</div>
+      <p class="card-desc">Transform any room with clean, smooth finishes. We prep properly, minimize disruption, and leave your space spotless.</p>
+    </div>
+    <div class="service-card">
+      <div class="card-icon">🏡</div>
+      <div class="card-title">Exterior Painting</div>
+      <p class="card-desc">Boost curb appeal and protect your property from the Bay Area elements with long-lasting exterior coatings.</p>
+    </div>
+    <div class="service-card">
+      <div class="card-icon">🏢</div>
+      <div class="card-title">Commercial Painting</div>
+      <p class="card-desc">Efficient, professional painting services for offices, retail spaces, and commercial properties — with minimal downtime.</p>
+    </div>
+    <div class="service-card">
+      <div class="card-icon">🪟</div>
+      <div class="card-title">Glass Installation</div>
+      <p class="card-desc">New windows, glass doors, partitions, and more — installed precisely and safely by our experienced glass team.</p>
+    </div>
+    <div class="service-card">
+      <div class="card-icon">🔄</div>
+      <div class="card-title">Window Replacement</div>
+      <p class="card-desc">Upgrade to energy-efficient windows with expert removal and installation. Improve insulation and cut utility costs.</p>
+    </div>
+    <div class="service-card">
+      <div class="card-icon">🔧</div>
+      <div class="card-title">Glass Repair</div>
+      <p class="card-desc">Cracked pane, foggy seal, or broken frame — we fix glass issues quickly and affordably before they become bigger problems.</p>
+    </div>
+    <div class="service-card">
+      <div class="card-icon">✨</div>
+      <div class="card-title">Custom Glass & Mirrors</div>
+      <p class="card-desc">Frameless mirrors, decorative glass panels, shower enclosures — custom-cut and installed to your exact specifications.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-header">
+    <p class="section-eyebrow">Our Work</p>
+    <h2 class="section-title">Projects We're Proud Of</h2>
+    <p class="section-sub">A look at some of our recent painting and glass work across the Bay Area.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item large">
+      <img src="images/project-1.jpg" alt="Painting and glass project completed by Painting and Glass Inc in the Bay Area" loading="lazy" />
+      <div class="gallery-overlay"><span>View Project</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/project-2.jpg" alt="Professional painting and glass work by Painting and Glass Inc" loading="lazy" />
+      <div class="gallery-overlay"><span>View Project</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/project-3.jpg" alt="Bay Area painting and glass project by Painting and Glass Inc" loading="lazy" />
+      <div class="gallery-overlay"><span>View Project</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/project-4.jpg" alt="Residential or commercial project by Painting and Glass Inc Bay Area" loading="lazy" />
+      <div class="gallery-overlay"><span>View Project</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/project-5.jpg" alt="Expert painting and glass services by Painting and Glass Inc" loading="lazy" />
+      <div class="gallery-overlay"><span>View Project</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/project-6.jpg" alt="Quality painting and glass installation by Painting and Glass Inc in the Bay Area" loading="lazy" />
+      <div class="gallery-overlay"><span>View Project</span></div>
+    </div>
+  </div>
+  <p class="gallery-note">📷 Place your 6 photos in an <strong>images/</strong> folder next to your HTML file, named <strong>project-1.jpg</strong> through <strong>project-6.jpg</strong></p>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-header">
+    <p class="section-eyebrow">Client Reviews</p>
+    <h2 class="section-title">What Our Customers Say</h2>
+    <p class="section-sub">We let our work — and our clients — speak for themselves.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="quote-mark">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">Hired them for a full exterior repaint and they knocked it out of the park. The crew was on time, professional, and cleaned up after themselves. Neighbors have been complimenting us ever since.</p>
+      <div class="testimonial-author">Maria G.</div>
+      <div class="testimonial-location">San Jose, CA</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="quote-mark">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">They replaced three windows and installed a custom mirror in our bathroom. The attention to detail was impressive — everything fit perfectly. Will absolutely use them again.</p>
+      <div class="testimonial-author">James T.</div>
+      <div class="testimonial-location">Fremont, CA</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="quote-mark">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">We needed our office repainted over a weekend to avoid downtime. They delivered — fast, clean, and exactly the color we wanted. Highly recommend for any commercial project.</p>
+      <div class="testimonial-author">Linda K.</div>
+      <div class="testimonial-location">Santa Clara, CA</div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section id="quote">
+  <div class="quote-inner">
+    <div class="quote-left">
+      <p class="section-eyebrow">Free Estimate</p>
+      <h2 class="section-title">Get a Quote<br>Today — No Obligation</h2>
+      <p class="section-sub">Tell us about your project and we'll get back to you within 24 hours with a free, detailed estimate.</p>
+      <div class="quote-perks">
+        <div class="perk"><div class="perk-check">✓</div> Free on-site estimates</div>
+        <div class="perk"><div class="perk-check">✓</div> Licensed & fully insured</div>
+        <div class="perk"><div class="perk-check">✓</div> Competitive, transparent pricing</div>
+        <div class="perk"><div class="perk-check">✓</div> Serving all of the Bay Area</div>
+        <div class="perk"><div class="perk-check">✓</div> Satisfaction guaranteed</div>
+      </div>
+    </div>
+    <div class="quote-form">
+      <div class="form-title">Request a Free Quote</div>
+      <div class="form-sub">We'll follow up within 24 hours.</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="John" />
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Smith" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="john@email.com" />
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="(408) 555-0000" />
+      </div>
+      <div class="form-group">
+        <label>Service Needed</label>
+        <select>
+          <option value="">Select a service...</option>
+          <option>Interior Painting</option>
+          <option>Exterior Painting</option>
+          <option>Commercial Painting</option>
+          <option>Glass Installation</option>
+          <option>Window Replacement</option>
+          <option>Glass Repair</option>
+          <option>Custom Glass / Mirrors</option>
+          <option>Multiple Services</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Project Details</label>
+        <textarea placeholder="Tell us about your project — size, location, timeline, etc."></textarea>
+      </div>
+      <button class="btn-submit">Send My Quote Request →</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">Painting <span>&</span> Glass Inc.</div>
+      <p class="footer-desc">Professional painting and glass services across the entire Bay Area. Quality craftsmanship, guaranteed results.</p>
+      <div class="contact-info" style="margin-top: 1.5rem;">
+        <div class="contact-item"><strong>Phone:</strong> (000) 000-0000</div>
+        <div class="contact-item"><strong>Email:</strong> hello@paintingandglassinc.com</div>
+        <div class="contact-item"><strong>Area:</strong> Bay Area Wide, CA</div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Interior Painting</a></li>
+        <li><a href="#services">Exterior Painting</a></li>
+        <li><a href="#services">Commercial Painting</a></li>
+        <li><a href="#services">Glass Installation</a></li>
+        <li><a href="#services">Window Replacement</a></li>
+        <li><a href="#services">Glass Repair</a></li>
+        <li><a href="#services">Custom Glass & Mirrors</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#quote">Free Quote</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Painting & Glass Inc. All rights reserved.</span>
+    <span>Licensed & Insured · Bay Area, CA</span>
+  </div>
+</footer>
+
+</body>
+</html>
